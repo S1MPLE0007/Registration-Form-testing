@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="title">Registration Form for my Academy</h1>
+    <p id="description">Join now and become part of my team and become successful millionaire in the future </p>
+
+    <form action="" method="post" id="survey-form">
+        <fieldset>
+            <label for="fullname" id="name-label">Name:</label> <input placeholder="Enter your fullname" id="name" type="text" required>
+
+            <label for="address" id="address-label">Address:</label> <input placeholder="Enter your address" id="address" type="text" required>
+            
+            <label for="personal-email" id="email-label">Email: <input placeholder="Enter your email" id="email" type="email" required>
+
+            <label for="age" id="number-label">Age: </label><input placeholder="Age" id="number" type="number" min="0" max="35">
+        </fieldset>
+
+        <fieldset>
+            <h3>What is your current role?:</h3>
+            <select  id="dropdown" name="role">
+                <option value="">(select one)</option>
+                <option value="option1">Student</option>
+                <option value="option2">Fresh Graduate</option>
+                <option value="option3">Employed</option>
+                <option value="option4">Unemployed</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <h3>Do you have any idea about the academy?</h3>
+            <!-- <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Yes</label>
+            <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Maybe</label>
+            <label><input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">No</label> -->
+            <label for="personal-account"><input id="idea" type="radio" name="account-type" value="1" class="inline" checked /> Yes</label>
+
+            <label for="personal-account"><input id="idea" type="radio" name="account-type" value="2" class="inline" checked /> Maybe</label>
+
+            <label for="personal-account"><input id="idea" type="radio" name="account-type" value="3" class="inline" checked /> No</label>
+        </fieldset>
+
+        <fieldset>
+            <h3>What your skills that describes you?</h3>
+            <!-- <label for="">Magalingg</label><input type="checkbox" value="checkbox1">
+            <label for=""></label><input type="checkbox" value="checkbox2">
+            <label for=""></label><input type="checkbox" value="checkbox3">
+            <label for=""></label><input type="checkbox" value="checkbox4">
+            <label for=""></label><input type="checkbox" value="checkbox5">
+            <label for=""></label><input type="checkbox" value="checkbox6">
+            <label for=""></label><input type="checkbox" value="checkbox7"> -->
+            <label for=""><input type="checkbox" name="skills" value="1" class="inline">Hardworking</label>
+            <label for=""><input type="checkbox" name="skills" value="2" class="inline">Communication</label>
+            <label for=""><input type="checkbox" name="skills" value="3" class="inline">Risk Taker</label>
+            <label for=""><input type="checkbox" name="skills" value="4" class="inline">Hardworking</label>
+            <label for=""><input type="checkbox" name="skills" value="5" class="inline">Cooperative</label>
+
+            <textarea type="textarea" name="" id="" cols="30" rows="10  " placeholder="Explain why do you want to join in my team..."></textarea>
+        </fieldset>
+            
+            <button id="submit" type="submit" class="button button1">Submit</button>
+    </form>
+</body>
+</html>
